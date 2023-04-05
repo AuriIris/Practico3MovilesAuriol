@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivPelicula1"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tvTitulo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivPelicula1"
+            android:text="Titulo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/tvDescripcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitulo1"
+            android:layout_toEndOf="@id/ivPelicula1"
+            android:layout_marginTop="8dp"
+            android:text="Descripcion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/btDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescripcion1"
+            android:layout_toEndOf="@id/ivPelicula1"
+            android:text="Detalle" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
